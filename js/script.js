@@ -14,19 +14,17 @@ if (navigator.serviceWorker) {
 function calculate() {
 
   //input
-  const age = parseInt(document.getElementById('age').value)
+  const number1 = parseInt(document.getElementById('number1').value)
+  const number2 = parseInt(document.getElementById('number2').value)
+  var repeat = 0
+  var answer = 0
 
   // process
-  if (age >= 17) {
-    document.getElementById("answer").innerHTML =
-      "You you are " + age + " years old, so you can see R rated movies."
+  while (repeat < number1) {
+    answer = answer + number2
+    repeat++
   }
-  else if (age >= 13){
-    document.getElementById("answer").innerHTML =
-      "You are " + age + " years old, so you can see PG-13 rated movies."
-  }
-  else {
-    document.getElementById("answer").innerHTML =
-      "You are " + age + " years old, so you can see G rated movies."
-  }
+  
+  //output
+  document.getElementById("answer").innerHTML = "The answer is: " + answer
 }

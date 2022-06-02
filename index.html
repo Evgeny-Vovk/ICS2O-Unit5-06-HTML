@@ -7,7 +7,7 @@
     <meta name="author" content="Evgeny Vovk"/>
     <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
     <meta name="theme-color" content="#FFFFFF"/>
-    <link rel="canonical" href="https://Evgeny-Vovk.github.io/ICS2O-Unit5-03-HTML/" />
+    <link rel="canonical" href="https://Evgeny-Vovk.github.io/ICS2O-Unit5-06-HTML/" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
@@ -27,14 +27,22 @@
         </div>
       </header>
       <main class="mdl-layout__content margin-left">
-        <img src="./img/movie.png" alt="movie" class="margin-top" width="300px" height="250px">
-        <h1>Enter your age.</h1>
+        <img src="./img/loop.png" alt="loop" class="margin-top" width="150px" height="150px">
+        <h1>Enter the two numbers you want to multiply.</h1>
         <br>
         <!-- Numeric Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
-            <label class="mdl-textfield__label" for="age">Age...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number1">
+            <label class="mdl-textfield__label" for="number1">First number...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number2">
+            <label class="mdl-textfield__label" for="number2">Second number...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
