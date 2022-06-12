@@ -14,14 +14,14 @@ if (navigator.serviceWorker) {
 function calculate() {
 
   //input
-  const number1 = parseInt(document.getElementById('number1').value)
-  const number2 = parseInt(document.getElementById('number2').value)
+  const firstNumber = parseInt(document.getElementById('first-number').value)
+  const secondNumber = parseInt(document.getElementById('second-number').value)
   var repeat = 0
   var answer = 0
 
   // process
-  while (repeat < number1) {
-    answer = answer + number2
+  while (repeat < firstNumber) {
+    answer = answer + secondNumber
     repeat++
   }
   
